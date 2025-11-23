@@ -1,6 +1,8 @@
+import api.OpenWeatherAPI;
 import command.CommandBase;
 import command.ConfigCommand;
 import command.InfoCommand;
+import command.WeatherCommand;
 
 import java.io.File;
 import java.util.HashMap;
@@ -35,8 +37,10 @@ public class Main {
     public static void initLibrary() {
         InfoCommand info_cmd = new InfoCommand();
         ConfigCommand config_cmd = new ConfigCommand();
+        WeatherCommand weather_cmd = new WeatherCommand();
         cmd_map.put("info", info_cmd);
         cmd_map.put("get_config", config_cmd);
+        cmd_map.put("get_weather", weather_cmd);
 
         System.out.print(
                 "---------- \n" +
