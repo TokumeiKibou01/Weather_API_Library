@@ -1,0 +1,10 @@
+﻿################################################################################
+# この .gitignore ファイルは Microsoft(R) Visual Studio によって自動的に作成されました。
+################################################################################
+
+/.idea
+/.vs
+/C-Sharp_Weather_API_Library/.vs/C-Sharp_Weather_API_Library
+/C-Sharp_Weather_API_Library/obj
+/C-Sharp_Weather_API_Library/C-Sharp_Weather_API_Library.sln
+/C-Sharp_Weather_API_Library/C-Sharp_Weather_API_Library.csproj
