@@ -35,7 +35,10 @@ class Program
 
     public static void initLibrary()
     {
+        ConfigManager.CreateConfig();
+
         cmd_dictionary.Add("info", new InfoCommand());
+        cmd_dictionary.Add("get_config", new ConfigCommand());
 
         Console.Write(">");
     }
