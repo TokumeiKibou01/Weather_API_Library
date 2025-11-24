@@ -20,17 +20,17 @@ int main() {
 		cin >> text;
 		if (text.length() != 0) {
 			map<string, CommandBase*>::iterator find = cmdMap.find(text);
-			if (find != cmdMap.end()) { //ÅŒã‚ÌƒCƒeƒŒ[ƒ^‚¶‚á‚È‚¢=ƒ}ƒbƒv‚É‚ ‚é
+			if (find != cmdMap.end()) { //ï¿½ÅŒï¿½ÌƒCï¿½eï¿½ï¿½ï¿½[ï¿½^ï¿½ï¿½ï¿½ï¿½È‚ï¿½=ï¿½}ï¿½bï¿½vï¿½É‚ï¿½ï¿½ï¿½
 				CommandBase* cmd = find->second;
 				cmd->runCommand(text);
 			}
 			else {
-				cout << "ƒRƒ}ƒ“ƒh‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ‚Å‚µ‚½" << endl;
+				cout << "ï¿½Rï¿½}ï¿½ï¿½ï¿½hï¿½ï¿½ï¿½ï¿½ï¿½Â‚ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½Å‚ï¿½ï¿½ï¿½" << endl;
 			}
 			cout << ">";
 		}
 		else {
-			cout << "ƒRƒ}ƒ“ƒh‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ‚Å‚µ‚½" << endl;
+			cout << "ï¿½Rï¿½}ï¿½ï¿½ï¿½hï¿½ï¿½ï¿½ï¿½ï¿½Â‚ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½Å‚ï¿½ï¿½ï¿½" << endl;
 		}
 	}
 }
