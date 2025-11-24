@@ -39,6 +39,7 @@ class Program
 
         cmd_dictionary.Add("info", new InfoCommand());
         cmd_dictionary.Add("get_config", new ConfigCommand());
+        cmd_dictionary.Add("get_weather", new WeatherCommand());
 
         Console.Write(">");
     }
