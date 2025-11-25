@@ -1,6 +1,7 @@
 #include <iostream>
 #include "CommandBase.h"
 #include "InfoCommand.h"
+#include "GetCurlCommand.h"
 #include <map>
 
 using namespace std;
@@ -36,6 +37,7 @@ int main() {
 
 void initLibrary() {
 	cmdMap["info"] = new InfoCommand();
+	cmdMap["get_curl"] = new GetCurlCommand();
 
 	cout << ">";
 }
